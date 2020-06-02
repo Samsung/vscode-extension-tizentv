@@ -30,29 +30,21 @@
   Run Tizen application on tizen TV, please configure the target address in user setting, also set TV as developer mode  
 * Tizen TV: Run on TV Simulator  
   Run Tizen web application on TV Simulator, please configure simultor's executable location in user setting  
-* Tizen TV: Run TV Emulator Manager & Tizen TV: Run on TV Emulator  
+* Tizen TV: Run on TV Emulator  
   Run Tizen application on TV Emulator, please configure Tizen Studio's location, and a Emulator instance should be started  
-* Tizen TV: SDB Command Promote  
-  Open SDB in shell to help execute the SDB commands you want  
-* Tizen TV: Web Inspector on Emulator & Tizen TV: Web Inspector on TV  
+* Tizen TV: Debug on TV
   Use google-chrome to debug with web inspector, please configure the chrome executable's path in user setting   
-* Tizen TV: Set Exception Path  
-  Set Exception Path for package   
-* Debugger: Tizen 3.0/4.0(TV)  
-  Add breakpoints in application and debug source code on Tizen TV  
-* Debugger: TV Simulator  
-  Add breakpoints in application and debug source code on TV Simulator  
-* Debugger: Tizen 3.0/4.0(Emulator)  
-  Add breakpoints in web application and debug functions on TV Emulator  
+* Tizen TV: Debug on Emulator
+  Use google-chrome to debug with web inspector, please configure the chrome executable's path in user setting   
 
 ## Getting Started
-The extension supports most of the basic features required to develop a Tizen TV app. It supports to create application using predefined templates, package the application, sign the application using certificate profile, launch a command prompt to execute sdb commands, run or debug application on TV Simulator, Emulator and Tizen TV.
+The extension supports most of the basic features required to develop a Tizen TV app. It supports to create application using predefined templates, package the application, sign the application using certificate profile, launch or debug application on TV Simulator, Emulator and Tizen TV.
 
 ### Setup Environment  
 1. Install latest VS Code release  
    *https://code.visualstudio.com*  
    *https://code.visualstudio.com/docs/setup/setup-overview* 
-2. Execute *ext install tizentv* in command pallete(or clone tizentv-1.0.0.vsix from github, install with terminal command)  
+2. Execute *ext install tizentv* in command pallete(or clone tizentv-1.1.0.vsix from github, install with terminal command)  
    *#code --install-extension tizentv-1.0.0.vsix*  
 3. Start/Restart VS Code  
 4. Use F1 to open the palette and input *>Tizen* to find commands 
