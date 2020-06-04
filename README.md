@@ -31,7 +31,7 @@
 * Tizen TV: Run Certificate Manager  
   Create/Retrieve/Update/Delete an author's profile by tizentv
 * Tizen TV: Wits Start (Install and Live reload)
-* Tizen TV: Wits Watch (Live reload)
+* Tizen TV: Wits Watch (Live reload)  
   Development tool for helping to run and develop your Tizen web application easily on your 2017+ Samsung TV. Find more details about Wits at *https://github.com/Samsung/Wits*
 
 ## Getting Started
