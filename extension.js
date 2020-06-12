@@ -26,12 +26,16 @@ function activate(context) {
     );
 
     context.subscriptions.push(
-        vscode.commands.registerCommand('tizentv.witsStart', async () => launchWits('s'))
+        vscode.commands.registerCommand('tizentv.witsStart', async () => launchWits('start'))
     );
 
     context.subscriptions.push(
-        vscode.commands.registerCommand('tizentv.witsWatch', async () => launchWits('w'))
+        vscode.commands.registerCommand('tizentv.witsWatch', async () => launchWits('watch'))
     );
+
+    context.subscriptions.push(
+        vscode.commands.registerCommand('tizentv.witsStop', async () => launchWits('stop'))
+    )
 
     let platform = process.platform;
     if (platform != 'win32') {
