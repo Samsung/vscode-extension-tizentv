@@ -103,7 +103,8 @@
 		}
 	},
 	"scripts": {
-		"postinstall": "node ./node_modules/vscode/bin/install"
+		"postinstall": "node ./node_modules/vscode/bin/install",
+		"install": "node ./scripts/downloadTools.js"
 	},
 	"devDependencies": {
 		"vscode": "^1.0.0"
@@ -112,6 +113,8 @@
 		"@tizentv/wits": "^2.1.3",
 		"archiver": "3.1.1",
 		"async": "^2.0.1",
+		"download": "^8.0.0",
+		"decompress": "^4.2.1",
 		"node-forge": "0.6.48",
 		"q": "^1.4.1",
 		"xml-crypto": "1.5.3",
