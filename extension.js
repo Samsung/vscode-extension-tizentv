@@ -4,7 +4,7 @@ const buildPackage = require('./lib/buildPackage');
 const certificateManager = require('./lib/certificateManager');
 const launchWits = require('./lib/witsLauncher');
 const launchApplication = require('./lib/launchApplication');
-const toolManager = require('./lib/toolManager');
+const excludeFiles = require('./lib/excludeFiles');
 
 function activate(context) {
     context.subscriptions.push(
@@ -36,37 +36,11 @@ function activate(context) {
 
     context.subscriptions.push(
         vscode.commands.registerCommand('tizentv.witsStop', async () => launchWits('stop'))
-    )
+    );
 
-    if (toolManager.checkLocalTools() == false) {
-        toolManager.prepareTools();
-
-        let platform = process.platform;
-        if (platform != 'win32') {
-            const fs = require('fs');
-            let sdbTool = `${__dirname}/tools//sdb`;
-            let secretTool = platform == 'linux' ? `${__dirname}/tools/certificate-encryptor/secret-tool` : null;
-            if (platform == 'linux') {
-                try {
-                    fs.accessSync(sdbTool, fs.constants.S_IXUSR);
-                } catch(err) {
-                    fs.chmodSync(sdbTool, fs.constants.S_IXUSR)
-                }
-                try {
-                    fs.accessSync(secretTool, fs.constants.S_IXUSR);
-                } catch(err) {
-                    fs.chmodSync(secretTool, fs.constants.S_IXUSR)
-                }
-            } 
-            if (platform == 'darwin') {
-                try {
-                    fs.accessSync(sdbTool, '0777');
-                } catch(err) {
-                    fs.chmodSync(sdbTool, '0777');
-                }
-            }
-        }
-    }
+    context.subscriptions.push(
+        vscode.commands.registerCommand('tizentv.excludeFiles',async (uri) => excludeFiles(uri))
+    );
 }
 exports.activate = activate;
 
