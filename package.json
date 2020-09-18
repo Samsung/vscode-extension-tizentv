@@ -143,7 +143,7 @@
 		"async": "^2.0.1",
 		"download": "^8.0.0",
 		"decompress": "^4.2.1",
-		"node-forge": "0.6.48",
+		"node-forge": "0.10.0",
 		"q": "^1.4.1",
 		"xml-crypto": "1.5.3",
 		"xml2js": "0.4.23",
