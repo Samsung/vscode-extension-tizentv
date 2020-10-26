@@ -1,4 +1,3 @@
-.vscode/**
 *.vsix
 .npmignore
 .jshintrc
@@ -7,7 +6,4 @@
 backup
 .bin
 ./node_modules
-<<<<<<< HEAD
-
-=======
->>>>>>> master
+node_modules
