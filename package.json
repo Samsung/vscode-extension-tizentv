@@ -23,6 +23,9 @@
         "onCommand:tizentv.launchApplication",
         "onCommand:tizentv.debugApplication",
         "onCommand:tizentv.certificateManager",
+        "onCommand:tizentv.tizentvShowOutput",
+        "onCommand:tizentv.tizentvHideOutput",
+        "onCommand:tizentv.tizentvClearOutput",
         "onCommand:tizentv.witsStart",
         "onCommand:tizentv.witsWatch",
         "onCommand:tizentv.witsStop",
@@ -81,6 +84,18 @@
             {
                 "command": "tizentv.witsClearOutput",
                 "title": "Tizen TV: Wits Clear Output"
+            },
+            {
+                "command": "tizentv.tizentvShowOutput",
+                "title": "Tizen TV: Show Output"
+            },
+            {
+                "command": "tizentv.tizentvHideOutput",
+                "title": "Tizen TV: Hide Output"
+            },
+            {
+                "command": "tizentv.tizentvClearOutput",
+                "title": "Tizen TV: Clear Output"
             }
         ],
         "menus": {
