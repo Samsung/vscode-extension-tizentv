@@ -24,14 +24,10 @@
         "onCommand:tizentv.debugApplication",
         "onCommand:tizentv.certificateManager",
         "onCommand:tizentv.tizentvShowOutput",
-        "onCommand:tizentv.tizentvHideOutput",
-        "onCommand:tizentv.tizentvClearOutput",
         "onCommand:tizentv.witsStart",
         "onCommand:tizentv.witsWatch",
         "onCommand:tizentv.witsStop",
         "onCommand:tizentv.witsShowOutput",
-        "onCommand:tizentv.witsHideOutput",
-        "onCommand:tizentv.witsClearOutput",
         "onCommand:tizentv.excludeFiles"
     ],
     "main": "./extension",
@@ -78,24 +74,8 @@
                 "title": "Tizen TV: Wits Show Output"
             },
             {
-                "command": "tizentv.witsHideOutput",
-                "title": "Tizen TV: Wits Hide Output"
-            },
-            {
-                "command": "tizentv.witsClearOutput",
-                "title": "Tizen TV: Wits Clear Output"
-            },
-            {
                 "command": "tizentv.tizentvShowOutput",
                 "title": "Tizen TV: Show Output"
-            },
-            {
-                "command": "tizentv.tizentvHideOutput",
-                "title": "Tizen TV: Hide Output"
-            },
-            {
-                "command": "tizentv.tizentvClearOutput",
-                "title": "Tizen TV: Clear Output"
             }
         ],
         "menus": {
@@ -169,7 +149,7 @@
     },
     "dependencies": {
         "@tizentv/webide-common-tizentv": "^1.0.10",
-        "@tizentv/wits": "file:../../Wits",
+        "@tizentv/wits": "^2.4.6",
         "archiver": "3.1.1",
         "async": "^2.0.1",
         "decompress": "^4.2.1",

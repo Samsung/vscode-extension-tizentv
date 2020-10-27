@@ -5,8 +5,10 @@ const certificateManager = require('./lib/certificateManager');
 const launchWits = require('./lib/witsLauncher');
 const launchApplication = require('./lib/launchApplication');
 const excludeFiles = require('./lib/excludeFiles');
-const witsOutput = require('./lib/witsOutput');
-const tizentvOutput = require('./lib/extensionOutput');
+const {
+    getWitsOutputCommand,
+    getTizenTvOutputCommand
+} = require('./lib/outputCommander');
 
 function activate(context) {
     context.subscriptions.push(
@@ -65,31 +67,13 @@ function activate(context) {
 
     context.subscriptions.push(
         vscode.commands.registerCommand('tizentv.witsShowOutput', async () =>
-            witsOutput.showOutput()
-        )
-    );
-
-    context.subscriptions.push(
-        vscode.commands.registerCommand('tizentv.witsHideOutput', async () =>
-            witsOutput.hideOutput()
-        )
-    );
-
-    context.subscriptions.push(
-        vscode.commands.registerCommand('tizentv.witsClearOutput', async () =>
-            witsOutput.clearOutput()
+            getWitsOutputCommand().show()
         )
     );
 
     context.subscriptions.push(
         vscode.commands.registerCommand('tizentv.tizentvShowOutput', async () =>
-            tizentvOutput.showOutput()
-        )
-    );
-
-    context.subscriptions.push(
-        vscode.commands.registerCommand('tizentv.tizentvHideOutput', async () =>
-            tizentvOutput.hideOutput()
+            getTizenTvOutputCommand().show()
         )
     );
 
