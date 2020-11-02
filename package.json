@@ -1,157 +1,168 @@
 {
-	"name": "tizentv",
-	"displayName": "tizentv",
-	"description": "'tizentv' is a lightweight dispatch of Tizen Studio, which provides extensible IDE to develop/debug tizen apps in vs code.",
-	"icon": "images/icon.png",
-	"version": "1.2.0",
-	"publisher": "tizensdk",
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/samsung/vscode-extension-tizentv"
-	},
-	"engines": {
-		"vscode": "^1.0.0"
-	},
-	"categories": [
-		"Debuggers",
-		"Snippets",
-		"Other"
-	],
-	"activationEvents": [
-		"onCommand:tizentv.createProject",
-		"onCommand:tizentv.buildPackage",
-		"onCommand:tizentv.launchApplication",
-		"onCommand:tizentv.debugApplication",
-		"onCommand:tizentv.certificateManager",
-		"onCommand:tizentv.witsStart",
-		"onCommand:tizentv.witsWatch",
-		"onCommand:tizentv.witsStop",
-		"onCommand:tizentv.excludeFiles"
-	],
-	"main": "./extension",
-	"contributes": {
-		"commands": [
-			{
-				"command": "tizentv.createProject",
-				"title": "Tizen TV: Create Web Project"
-			},
-			{
-				"command": "tizentv.buildPackage",
-				"title": "Tizen TV: Build Signed Package"
-			},
-			{
-				"command": "tizentv.launchApplication",
-				"title": "Tizen TV: Launch Application"
-			},
-			{
-				"command": "tizentv.debugApplication",
-				"title": "Tizen TV: Debug Application"
-			},
-			{
-				"command": "tizentv.certificateManager",
-				"title": "Tizen TV: Run Certificate Manager"
-			},
-			{
-				"command": "tizentv.witsStart",
-				"title": "Tizen TV: Wits Start (Install and Live reload)"
-			},
-			{
-				"command": "tizentv.witsWatch",
-				"title": "Tizen TV: Wits Watch (Live reload)"
-			},
-			{
-				"command": "tizentv.witsStop",
-				"title": "Tizen TV: Wits Stop"
-			},
-			{
-				"command": "tizentv.excludeFiles",
-				"title": "Tizen TV: Excluding files"
-			}
-		],
-		"menus": {
-			"explorer/context": [
-				{
-					"command": "tizentv.excludeFiles",
-					"when": "explorerViewletFocus"
-				}
-			],
-			"commandPalette": [
-				{
-					"command": "tizentv.excludeFiles",
-					"when": "false"
-				}
-			]
-		},
-		"configuration": {
-			"type": "object",
-			"title": "TizenTV SDK Configuration",
-			"properties": {
-				"tizentv.targetDeviceAddress": {
-					"type": [
-						"string",
-						"null"
-					],
-					"default": null,
-					"description": "Set the TV IP to connect, default remote port is 26101."
-				},
-				"tizentv.hostPCAddress": {
-					"type": [
-						"string",
-						"null"
-					],
-					"default": null,
-					"description": "Set the TV IP to connect, default remote port is 26101."
-				},
-				"tizentv.simulatorExecutable": {
-					"type": [
-						"string",
-						"null"
-					],
-					"default": null,
-					"description": "Set the location of simulator-executable, eg: c:\\\\tizen-studio\\\\tools\\\\sec-tv-simulator(win) or /home/tizen-studio/sec-tv-simulator(linux/macOS)."
-				},
-				"tizentv.chromeExecutable": {
-					"type": [
-						"string",
-						"null"
-					],
-					"default": null,
-					"description": "Set the location of chrome-executable, eg: C:\\\\Program Files\\\\Chrome\\\\chrome.exe (win) or /opt/google/chrome/google-chrome(linux/macOS)."
-				},
-				"tizentv.excludeFiles": {
-					"type": [
-						"string",
-						"null"
-					],
-					"default": null,
-					"scope": "workspace",
-					"description": "Set the files or folder which are excluded in widget package, eg: C:\\\\workspace\\\\projectName\\\\ignoreFile1.txt, C:\\\\workspace\\\\projectName\\\\ignoreFile2"
-				}
-			}
-		}
-	},
-	"scripts": {
-		"postinstall": "node ./node_modules/vscode/bin/install"
-	},
-	"devDependencies": {
-		"vscode": "^1.0.0"
-	},
-	"dependencies": {
-		"@tizentv/wits": "^2.4.4",
-		"@tizentv/webide-common-tizentv": "^1.0.10",
-		"archiver": "3.1.1",
-		"async": "^2.0.1",
-		"download": "^8.0.0",
-		"decompress": "^4.2.1",
-		"node-forge": "0.10.0",
-		"q": "^1.4.1",
-		"xml-crypto": "1.5.3",
-		"xml2js": "0.4.23",
-		"xmldom": "0.1.27"
-	},
-	"__metadata": {
-		"id": "77644dbe-ab34-478b-b309-83037eae10db",
-		"publisherDisplayName": "tizensdk",
-		"publisherId": "02badf05-d1d8-4ed9-a9c5-4e656ba07870"
-	}
+    "name": "tizentv",
+    "displayName": "tizentv",
+    "description": "'tizentv' is a lightweight dispatch of Tizen Studio, which provides extensible IDE to develop/debug tizen apps in vs code.",
+    "icon": "images/icon.png",
+    "version": "1.2.2",
+    "publisher": "tizensdk",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/samsung/vscode-extension-tizentv"
+    },
+    "engines": {
+        "vscode": "^1.0.0"
+    },
+    "categories": [
+        "Debuggers",
+        "Snippets",
+        "Other"
+    ],
+    "activationEvents": [
+        "onCommand:tizentv.createProject",
+        "onCommand:tizentv.buildPackage",
+        "onCommand:tizentv.launchApplication",
+        "onCommand:tizentv.debugApplication",
+        "onCommand:tizentv.certificateManager",
+        "onCommand:tizentv.tizentvShowOutput",
+        "onCommand:tizentv.witsStart",
+        "onCommand:tizentv.witsWatch",
+        "onCommand:tizentv.witsStop",
+        "onCommand:tizentv.witsShowOutput",
+        "onCommand:tizentv.excludeFiles"
+    ],
+    "main": "./extension",
+    "contributes": {
+        "commands": [
+            {
+                "command": "tizentv.createProject",
+                "title": "Tizen TV: Create Web Project"
+            },
+            {
+                "command": "tizentv.buildPackage",
+                "title": "Tizen TV: Build Signed Package"
+            },
+            {
+                "command": "tizentv.launchApplication",
+                "title": "Tizen TV: Launch Application"
+            },
+            {
+                "command": "tizentv.debugApplication",
+                "title": "Tizen TV: Debug Application"
+            },
+            {
+                "command": "tizentv.certificateManager",
+                "title": "Tizen TV: Run Certificate Manager"
+            },
+            {
+                "command": "tizentv.witsStart",
+                "title": "Tizen TV: Wits Start (Install and Live reload)"
+            },
+            {
+                "command": "tizentv.witsWatch",
+                "title": "Tizen TV: Wits Watch (Live reload)"
+            },
+            {
+                "command": "tizentv.witsStop",
+                "title": "Tizen TV: Wits Stop"
+            },
+            {
+                "command": "tizentv.excludeFiles",
+                "title": "Tizen TV: Excluding files"
+            },
+            {
+                "command": "tizentv.witsShowOutput",
+                "title": "Tizen TV: Wits Show Output"
+            },
+            {
+                "command": "tizentv.tizentvShowOutput",
+                "title": "Tizen TV: Show Output"
+            }
+        ],
+        "menus": {
+            "explorer/context": [
+                {
+                    "command": "tizentv.excludeFiles",
+                    "when": "explorerViewletFocus"
+                }
+            ],
+            "commandPalette": [
+                {
+                    "command": "tizentv.excludeFiles",
+                    "when": "false"
+                }
+            ]
+        },
+        "configuration": {
+            "type": "object",
+            "title": "TizenTV SDK Configuration",
+            "properties": {
+                "tizentv.targetDeviceAddress": {
+                    "type": [
+                        "string",
+                        "null"
+                    ],
+                    "default": null,
+                    "description": "Set the TV IP to connect, default remote port is 26101."
+                },
+                "tizentv.hostPCAddress": {
+                    "type": [
+                        "string",
+                        "null"
+                    ],
+                    "default": null,
+                    "description": "Set the TV IP to connect, default remote port is 26101."
+                },
+                "tizentv.simulatorExecutable": {
+                    "type": [
+                        "string",
+                        "null"
+                    ],
+                    "default": null,
+                    "description": "Set the location of simulator-executable, eg: c:\\\\tizen-studio\\\\tools\\\\sec-tv-simulator(win) or /home/tizen-studio/sec-tv-simulator(linux/macOS)."
+                },
+                "tizentv.chromeExecutable": {
+                    "type": [
+                        "string",
+                        "null"
+                    ],
+                    "default": null,
+                    "description": "Set the location of chrome-executable, eg: C:\\\\Program Files\\\\Chrome\\\\chrome.exe (win) or /opt/google/chrome/google-chrome(linux/macOS)."
+                },
+                "tizentv.excludeFiles": {
+                    "type": [
+                        "string",
+                        "null"
+                    ],
+                    "default": null,
+                    "scope": "workspace",
+                    "description": "Set the files or folder which are excluded in widget package, eg: C:\\\\workspace\\\\projectName\\\\ignoreFile1.txt, C:\\\\workspace\\\\projectName\\\\ignoreFile2"
+                }
+            }
+        }
+    },
+    "scripts": {
+        "postinstall": "node ./node_modules/vscode/bin/install"
+    },
+    "devDependencies": {
+        "@types/vscode": "^1.50.0",
+        "vscode": "^1.0.0"
+    },
+    "dependencies": {
+        "@tizentv/webide-common-tizentv": "^1.0.10",
+        "@tizentv/wits": "^2.4.6",
+        "archiver": "3.1.1",
+        "async": "^2.0.1",
+        "decompress": "^4.2.1",
+        "download": "^8.0.0",
+        "node-forge": "0.10.0",
+        "q": "^1.4.1",
+        "xml-crypto": "1.5.3",
+        "xml2js": "0.4.23",
+        "xmldom": "0.1.27"
+    },
+    "__metadata": {
+        "id": "77644dbe-ab34-478b-b309-83037eae10db",
+        "publisherDisplayName": "tizensdk",
+        "publisherId": "02badf05-d1d8-4ed9-a9c5-4e656ba07870"
+    }
 }
