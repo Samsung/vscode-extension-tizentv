@@ -144,7 +144,6 @@
         "postinstall": "node ./node_modules/vscode/bin/install"
     },
     "devDependencies": {
-        "@types/vscode": "^1.50.0",
         "vscode": "^1.0.0"
     },
     "dependencies": {
