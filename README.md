@@ -72,7 +72,8 @@ If the launch.json is not yet configured, please configure the launching item
 
 ## F.A.Q
 Please get contact points at below:  
-`xueli.hu@samsung.com`  
-`chunhua1.liu@samsung.com`  
+`sejung.chang@samsung.com`
+`woosik.park@samsung.com`  
+`hyojins.kim@samsung.com`
 
 
