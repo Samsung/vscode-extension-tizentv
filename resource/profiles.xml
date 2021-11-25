@@ -1,13 +1,3 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<profiles active="hellotizen" version="3.1">
-  <profile name="hellotizen">
-    <profileitem ca="C:\tizentv-tools\certificate-generator\certificates\developer\tizen-developer-ca.cer" distributor="0" key="e:\dev\vscode-extension\vscode-extension-tizentv\resource\Author\hellotizen.p12" password="e:\dev\vscode-extension\vscode-extension-tizentv\resource\Author\hellotizen.pwd" rootca=""/>
-    <profileitem ca="C:\tizentv-tools\certificate-generator\certificates\distributor\sdk-public\tizen-distributor-ca.cer" distributor="1" key="C:\tizentv-tools\certificate-generator\certificates\distributor\sdk-public\tizen-distributor-signer.p12" password="C:\tizentv-tools\certificate-generator\certificates\distributor\sdk-public\tizen-distributor-signer.pwd" rootca=""/>
-    <profileitem ca="" distributor="2" key="" password="" rootca=""/>
-  </profile>
-  <profile name="bluebanana">
-    <profileitem ca="C:\tizentv-tools\certificate-generator\certificates\developer\tizen-developer-ca.cer" distributor="0" key="e:\dev\vscode-extension\vscode-extension-tizentv\resource\Author\bluebanana.p12" password="e:\dev\vscode-extension\vscode-extension-tizentv\resource\Author\bluebanana.pwd" rootca=""/>
-    <profileitem ca="C:\tizentv-tools\certificate-generator\certificates\distributor\sdk-public\tizen-distributor-ca.cer" distributor="1" key="C:\tizentv-tools\certificate-generator\certificates\distributor\sdk-public\tizen-distributor-signer.p12" password="C:\tizentv-tools\certificate-generator\certificates\distributor\sdk-public\tizen-distributor-signer.pwd" rootca=""/>
-    <profileitem ca="" distributor="2" key="" password="" rootca=""/>
-  </profile>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<profiles active="" version="3.1">
 </profiles>
