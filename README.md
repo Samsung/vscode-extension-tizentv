@@ -9,12 +9,6 @@
 
 <h4 align="center">Generate/Edit/Package/Launch(Run, Debug) your applications with Tizen Targets</h4>
 
-<p align="center">
-  <a href="https://github.com/samsung/vscode-extension-tizentv"><img src="https://raw.githubusercontent.com/samsung/vscode-extension-tizentv/master/images/buildpassing.png?branch=master" alt="Source"></a>
-  <a href="https://github.com/samsung/vscode-extension-tizentv/releases"><img src="https://raw.githubusercontent.com/samsung/vscode-extension-tizentv/master/images/release.png?branch=master" alt="Release"></a>
-  <a href="https://github.com/samsung/vscode-extension-tizentv/wiki"><img src="https://raw.githubusercontent.com/samsung/vscode-extension-tizentv/master/images/chatter.png?branch=master" alt="Wiki"></a>
-</p>
-
 'TizenTV' is a VS Code extension that provides a lightweight IDE for Tizen application developers, helps to generate, update and package an application, also launch (run, debug mode) an application on Tizen targets.
 
 ![Demo](https://raw.githubusercontent.com/samsung/vscode-extension-tizentv/master/images/demo.gif)
