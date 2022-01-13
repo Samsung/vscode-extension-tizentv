@@ -5,6 +5,7 @@ const certificateManager = require('./lib/certificateManager');
 const launchWits = require('./lib/witsLauncher');
 const launchApplication = require('./lib/launchApplication');
 const excludeFiles = require('./lib/excludeFiles');
+const sdburiInstaller = require('./lib/sdburi/sdbUriInstaller');
 const {
     getWitsOutputCommand,
     getTizenTvOutputCommand
@@ -83,6 +84,8 @@ function activate(context) {
             async () => tizentvOutput.clearOutput()
         )
     );
+
+    sdburiInstaller.installSdburi();
 }
 exports.activate = activate;
 
