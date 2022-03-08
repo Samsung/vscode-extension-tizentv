@@ -1,4 +1,5 @@
 const vscode = require('vscode');
+const path = require('path');
 const createProject = require('./lib/createProject');
 const buildPackage = require('./lib/buildPackage');
 const certificateManager = require('./lib/certificateManager');
@@ -32,14 +33,23 @@ function activate(context) {
     );
 
     context.subscriptions.push(
-        vscode.commands.registerCommand('tizentv.launchApplication', async () =>
-            launchApplication(false)
-        )
+        vscode.commands.registerCommand('tizentv.launchApplication', async (file) => {
+            if (file && file.fsPath && path.extname(file.fsPath) === '.wgt') {
+                launchApplication(false, file.fsPath)
+            } else {
+                launchApplication(false);
+            }
+        })
     );
+
     context.subscriptions.push(
-        vscode.commands.registerCommand('tizentv.debugApplication', async () =>
-            launchApplication(true)
-        )
+        vscode.commands.registerCommand('tizentv.debugApplication', async (file) => {
+            if (file && file.fsPath && path.extname(file.fsPath) === '.wgt') {
+                launchApplication(true, file.fsPath)
+            } else {
+                launchApplication(true);
+            }
+        })
     );
 
     context.subscriptions.push(
