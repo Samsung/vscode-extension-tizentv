@@ -10,5 +10,6 @@
     "parserOptions": {
         "ecmaVersion": "latest"
     },
-    "rules": {}
+    "rules": {},
+    "import/resolver": {}
 }
