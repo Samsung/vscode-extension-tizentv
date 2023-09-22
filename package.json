@@ -3,7 +3,7 @@
   "displayName": "tizentv",
   "description": "'tizentv' is a lightweight dispatch of Tizen Studio, which provides extensible IDE to develop/debug tizen apps in vs code.",
   "icon": "images/icon.png",
-  "version": "1.3.2",
+  "version": "1.3.3",
   "publisher": "tizensdk",
   "repository": {
     "type": "git",
@@ -172,7 +172,7 @@
   },
   "dependencies": {
     "@tizentv/tools": "^1.1.3",
-    "@tizentv/webide-common-tizentv": "^1.0.17",
+    "@tizentv/webide-common-tizentv": "file:../webIDE-common-tizentv",
     "@tizentv/wits": "^2.5.8",
     "archiver": "3.1.1",
     "async": "^2.6.4",
