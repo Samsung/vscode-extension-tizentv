@@ -17,20 +17,9 @@
     "Other"
   ],
   "activationEvents": [
-    "*",
-    "onCommand:tizentv.createProject",
-    "onCommand:tizentv.buildPackage",
-    "onCommand:tizentv.launchApplication",
-    "onCommand:tizentv.debugApplication",
-    "onCommand:tizentv.certificateManager",
-    "onCommand:tizentv.tizentvShowOutput",
-    "onCommand:tizentv.witsStart",
-    "onCommand:tizentv.witsWatch",
-    "onCommand:tizentv.witsStop",
-    "onCommand:tizentv.witsShowOutput",
-    "onCommand:tizentv.excludeFiles"
+    "onStartupFinished"
   ],
-  "main": "./extension",
+  "main": "./extension.js",
   "contributes": {
     "commands": [
       {
@@ -76,6 +65,10 @@
       {
         "command": "tizentv.tizentvShowOutput",
         "title": "Tizen TV: Show Output"
+      },
+      {
+        "command": "tizentv.setTargetDeviceAddress",
+        "title": "Tizen TV: Set Target Device Address"
       }
     ],
     "menus": {
@@ -172,7 +165,7 @@
   },
   "dependencies": {
     "@tizentv/tools": "^1.1.3",
-    "@tizentv/webide-common-tizentv": "^1.0.18",
+    "@tizentv/webide-common-tizentv": "^1.0.19",
     "@tizentv/wits": "^2.5.8",
     "archiver": "3.1.1",
     "async": "^2.6.4",
