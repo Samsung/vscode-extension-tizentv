@@ -33,8 +33,10 @@
   Run `live reload` without installing the package again.
 * Tizen TV: Wits Stop  
   Stop `live reload` feature.
-* Tizen TV: Wits Show Output
+* Tizen TV: Wits Show Output  
   Open Wits output channel for details
+* Tizen TV: Set Target Device Address
+  Set Target device address to launch application.
 
 ## Getting Started
 The extension supports most of the basic features required to develop a Tizen TV app. It supports to create application using predefined templates, package the application, sign the application using certificate profile, launch (run / debug) application on TV Simulator, Emulator and Tizen TV.
@@ -57,8 +59,8 @@ File > Preferences > User Settings or Code > Preferences > User Settings
   Configuration of user's host PC IP address  
 * tizentv.targetDeviceAddress  
   Configuration of target TV's IP address  
-* tizentv.simulatorLocation  
-  Configuration of TV simulator's executable location  
+* tizentv.simulatorExecutable
+  Configuration of TV simulator's executable location 
 * tizentv.excludeFiles 
   Add files should be excluded
 * tizentv.chromeExecutable  
