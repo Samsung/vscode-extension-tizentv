@@ -10,7 +10,7 @@
     "url": "https://github.com/samsung/vscode-extension-tizentv"
   },
   "engines": {
-    "vscode": "^1.0.0"
+    "vscode": "^1.65.0"
   },
   "categories": [
     "Snippets",
@@ -157,7 +157,7 @@
     "postinstall": "node ./node_modules/vscode/bin/install"
   },
   "devDependencies": {
-    "@types/vscode": "^1.82.0",
+    "@types/vscode": "^1.65.0",
     "eslint": "^8.12.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-plugin-import": "^2.25.4",
