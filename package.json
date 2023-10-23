@@ -153,9 +153,7 @@
       }
     }
   },
-  "scripts": {
-    "postinstall": "node ./node_modules/vscode/bin/install"
-  },
+  "scripts": {},
   "devDependencies": {
     "@types/vscode": "^1.65.0",
     "eslint": "^8.12.0",

@@ -59,7 +59,7 @@ File > Preferences > User Settings or Code > Preferences > User Settings
   Configuration of user's host PC IP address  
 * tizentv.targetDeviceAddress  
   Configuration of target TV's IP address  
-* tizentv.simulatorExecutable
+* tizentv.simulatorExecutable  
   Configuration of TV simulator's executable location 
 * tizentv.excludeFiles 
   Add files should be excluded
