@@ -35,7 +35,7 @@
   Stop `live reload` feature.
 - Tizen TV: Wits Show Output  
   Open Wits output channel for details
-- Tizen TV: Set Target Device Address
+- Tizen TV: Set Target Device Address  
   Set Target device address to launch application.
 
 ## Getting Started
@@ -69,6 +69,8 @@ File > Preferences > User Settings or Code > Preferences > User Settings
   Add files should be excluded
 - tizentv.chromeExecutable  
   Configuration of chrome executable's path
+- tizentv.portForward  
+  Configuration of target TV's debug port  
 
 <p><img src="https://raw.githubusercontent.com/samsung/vscode-extension-tizentv/master/images/setting.png" alt="setting"></p>
 
