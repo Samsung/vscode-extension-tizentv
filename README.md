@@ -82,6 +82,12 @@ File > Preferences > User Settings or Code > Preferences > User Settings
 
 - Refer the [Setting for "RTL TV" in "Tizentv extension"](https://github.com/Samsung/vscode-extension-tizentv/wiki/Setting-for-%22RTL-TV%22-in-%22Tizentv-extension%22)
 
+### Simulator is not working on mac os.
+
+- Open settings.json
+- Check the value of "tizentv.simulatorExecutable"
+- Try with "/Users/[your account]/tizen-studio/tools/sec-tv-simulator/nwjs.app/Contents/MacOS/nwjs"
+
 ## Footer
 
 If you have any issue, please leave a [github issue](https://github.com/Samsung/vscode-extension-tizentv/issues/new).
