@@ -37,6 +37,8 @@
   Open Wits output channel for details
 - Tizen TV: Set Target Device Address  
   Set Target device address to launch application.
+- Tizen TV: Excluding files  
+  Set excluding files not to build
 
 ## Getting Started
 
@@ -70,13 +72,16 @@ File > Preferences > User Settings or Code > Preferences > User Settings
 - tizentv.chromeExecutable  
   Configuration of chrome executable's path
 - tizentv.portForward  
-  Configuration of target TV's debug port  
+  Configuration of target TV's debug port
 
 <p><img src="https://raw.githubusercontent.com/samsung/vscode-extension-tizentv/master/images/setting.png" alt="setting"></p>
 
-## F.A.Q
+## FAQ
 
-Please get contact points at below:  
-`sejung.chang@samsung.com`  
-`woosik.park@samsung.com`  
-`hyojins.kim@samsung.com`
+### How to launch/debug a web app on RTL TV (Remote Test Lab TV)?
+
+- Refer the [Setting for "RTL TV" in "Tizentv extension"](https://github.com/Samsung/vscode-extension-tizentv/wiki/Setting-for-%22RTL-TV%22-in-%22Tizentv-extension%22)
+
+## Footer
+
+If you have any issue, please leave a [github issue](https://github.com/Samsung/vscode-extension-tizentv/issues/new).
